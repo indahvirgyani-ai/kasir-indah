@@ -11,7 +11,7 @@
         <div class="card-body">
              <form action="{{ route('siswa.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf 
-
+<!-- Halo -->
                 <div class="form-group">
                     <label for="nama_siswa">Nama Siswa</label>
                     <input type="text" name="nama_siswa" class="form-control @error('nama_siswa') is-invalid @enderror" id="nama_siswa" required value="{{ old('nama_siswa') }}">
